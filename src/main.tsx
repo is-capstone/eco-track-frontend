@@ -26,7 +26,7 @@ function refreshToken(keycloakClient: Keycloak) {
 keycloak
   .init({
     onLoad: 'login-required',
-    redirectUri: 'http://localhost:5173/main',
+    redirectUri: 'https://eco-track.site/main',
     checkLoginIframe: false,
     pkceMethod: 'S256',
   })
