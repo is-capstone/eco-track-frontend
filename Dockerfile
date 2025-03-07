@@ -8,8 +8,7 @@ RUN npm run build
 
 # Stage 2: Serve the React application with Nginx
 FROM nginx:alpine
-RUN rm /etc/nginx/conf.d/default.conf
 COPY --from=build-stage /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d
-EXPOSE 80
+COPY nginx.conf /etc/nginx/nginx.conf
+EXPOSE 80/tcp
 CMD ["nginx", "-g", "daemon off;"]
