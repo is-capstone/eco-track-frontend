@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { UnitState, UnitStateList } from './unitsTypes';
+import { UnitStateList } from './unitsTypes';
 
 const initialState: UnitStateList = {
   content: [],
