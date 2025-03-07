@@ -1,5 +1,5 @@
 # Stage 1: Build the React application
-FROM node:23.9.0 as build-stage
+FROM node:23.9.0 AS build-stage
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
