@@ -36,7 +36,7 @@ export const Dropdown = ({ onChange }: DropdownProps) => {
 
   const handleChangeValue = (selectedOption: SingleValue<OptionType>) => {
     if (onChange && selectedOption) {
-      onChange(selectedOption?.value ?? -1);
+      onChange(selectedOption?.value ?? 0);
     }
   };
 

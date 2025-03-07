@@ -2,7 +2,7 @@
 FROM node:23.9.0 AS build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN rm -rf node_modules && npm install -f
 COPY . .
 RUN npm run build
 
