@@ -9,7 +9,6 @@ const keycloakConfig = {
   url: 'https://sso.keycloak.eco-track.site',
   realm: 'devrealm',
   clientId: 'eco-track',
-  silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
   KeycloakResponseType: 'code',
 };
 
@@ -29,6 +28,7 @@ keycloak
     redirectUri: 'https://eco-track.site/main',
     checkLoginIframe: false,
     pkceMethod: 'S256',
+    silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html',
   })
   .then(function (authenticated) {
     console.log(keycloak.token);
