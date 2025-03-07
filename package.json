@@ -27,6 +27,7 @@
     "react-select": "^5.10.1",
     "react-toastify": "^11.0.5",
     "redux": "^5.0.1",
+    "rollup": "^4.34.9",
     "sass": "^1.84.0"
   },
   "devDependencies": {
